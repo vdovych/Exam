@@ -5,11 +5,9 @@ public class MailInfo {
     private MailCode mailCode;
     private String text;
     public MailInfo(Client client, MailCode mailCode, String text){
-        if (mailCode == null)
-                mailCode = MailCode.SIMPLE;
         this.client = client;
         this.mailCode = mailCode;
-        this.text = mailCode.toString()+client.getName()+text;
+        this.text = mailCode.format(text,client);
     }
 
     public Client getClient() {
