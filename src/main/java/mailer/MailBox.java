@@ -1,8 +1,10 @@
+package mailer;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class MailBox {
-    List<MailInfo> infos;
+    private List<MailInfo> infos;
     public MailBox(){
         infos = new LinkedList<MailInfo>();
     }

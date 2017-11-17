@@ -1,3 +1,5 @@
+package mailer;
+
 public class Client {
     private String name;
     private int age;
@@ -15,7 +17,7 @@ public class Client {
     public boolean isReal(){
         if(age<1 ||age>150)
             return false;
-        if(!email.matches(("^[A-Z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$")))
+        if(!email.matches(("^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$")))
             return false;
         return true;
     }
