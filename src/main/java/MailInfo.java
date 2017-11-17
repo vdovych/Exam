@@ -1,11 +1,9 @@
 public class MailInfo {
     private Client client;
-    private String recievingEmail;
     private MailCode mailCode;
     private String text;
-    public MailInfo(Client client, String recievingEmail, MailCode mailCode, String text){
+    public MailInfo(Client client, MailCode mailCode, String text){
         this.client = client;
-        this.recievingEmail = recievingEmail;
         this.mailCode = mailCode;
         this.text = text;
     }
@@ -24,5 +22,13 @@ public class MailInfo {
 
     public void setMailCode(MailCode mailCode) {
         this.mailCode = mailCode;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
